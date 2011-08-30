@@ -1,0 +1,40 @@
+Markdown CV v0.1
+==========
+*init 2011-05-14*
+
+Overview:
+	This is old n00b code for building a PDF out of multiple markdown files. No point other than to show poor ways of getting around a script like this. Not flexible nor innovative.
+
+Files:
+* mdcv-setup.sh: Run this to set up the cv working directory
+* mdcv-build.sh: Run this to compile and build the CV
+* mdcv-reset.sh: Run this to restore the directory to pre-setup conditions
+
+Dependencies:
+	- Pandoc: http://johnmacfarlane.net/pandoc/
+	- A proper *nix backend (read: Linux/OS X); bash is used because the script reads "crunch! bang! bin! bash!"
+	- (Knowledge of) Markdown
+
+Nice to have:
+	- MultiMarkdown
+	- Full LaTeX library if you want to use templates with the *.tex file (hackery)
+	- Git for version control (if you dl'd this script, you probably have git) and for maintaining multiple CV versions
+
+Workflow:
+Step 1: Draft in separate markdown (*.md) files per area
+
+Step 2: Run script to compile into single *.mmd and process to *.pdf
+	Source format: *.md
+	Output format: mdcv.md --> NAME-CV.pdf using Pandoc
+
+Step 3: Cover letter + References
+
+Extra Step: Build Script for directory structure. 
+
+Source Files:
+	- mdcv-title.mmd		MultiMarkdown cover page (commented out by default)
+	- mdcv-contact.md		Current contact information
+	- mdcv-experience.md		Work history and experience
+	- mdcv-skills.md		Professional skills
+	- mdcv-education.md		Education history
+	- mdcv-append.md		Ad-hoc appended section (commented out by default)

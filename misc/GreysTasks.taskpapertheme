@@ -1,0 +1,110 @@
+<theme>
+	<!-- Window Style -->
+	<color id="foreground" red="1.0" green=".2" blue=".2" alpha="1.0" />
+	<color id="background" red=".1" green=".1" blue=".1" alpha="0.97" />
+	<window foregroundColorID="foreground" backgroundColorID="background" shouldUseHUDScrollers="no" />
+
+	<!-- Text View Style -->
+	<color id="tag" red=".35" green=".35" blue=".35" alpha="1.0" />
+	<color id="handle" extendsColorID="foreground" />
+	<color id="insertionPoint" red="1.0" green=".5" blue=".5" alpha="1.0" />
+	<color id="selection" red=".3" green=".3" blue=".3" alpha="0.9" />
+	<font id="base" name="Helvetica Neue" size="16" />
+	<characterStyle id="base" fontID="base" foregroundColorID="foreground" />
+	<paragraphStyle id="base" paragraphSpacingBefore="0" paragraphSpacing="4" lineSpacing="0" lineHeightMultiple="1.0" alignment="NSLeftTextAlignment" />
+	<textView
+		shouldAntialiasText="yes"
+		shouldShowNoteHandles="yes"
+		shouldShowProjectHandles="yes"
+		defaultCharacterStyleID="base"
+		insertionPointColorID="insertionPoint"
+		selectionColorID="selection"
+		handleColorID="handle"
+		tagColorID="tag"
+	/>
+
+	<!-- Task style. This section defines the styles that are applied to task lines. -->
+	<color id="task" red=".9" green=".9" blue=".9" alpha="1.0" />
+	<font id="task" extendsFontID="base" />
+	<characterStyle id="task" fontID="task" foregroundColorID="task" />
+	<entryRule matchesQuery="type = task" lineCharacterStyleID="task" paragraphStyleID="base" />
+
+	<!-- Project style. This section defines the styles that are applied to project lines. -->
+	<color id="project" extendsColorID="foreground" />
+	<font id="project" name="Helvetica Neue Medium" />
+	<characterStyle id="project" fontID="project" foregroundColorID="project" />
+	<paragraphStyle id="project" extendsParagraphStyleID="base" paragraphSpacingBefore="0" paragraphSpacing="4" />
+	<entryRule matchesQuery="type = &quot;project&quot;" lineCharacterStyleID="project" paragraphStyleID="project" />
+
+	<!-- Note style. This section defines the styles that are applied to note lines. -->
+	<color id="note" red=".6" green=".6" blue=".6" alpha="1.0" />
+	<font id="note" extendsFontID="base" />
+	<characterStyle id="note" fontID="note" foregroundColorID="note" />
+	<entryRule matchesQuery="type = note" lineCharacterStyleID="note" paragraphStyleID="base" />
+
+	<!-- GroupHeader style. This section defines the styles that are applied to groupHeader lines. (top level projects) -->
+	<color id="clear" red="1.0" green="1.0" blue="1.0" alpha="0.0" />
+	<gradient id="groupHeader" startColorID="foreground" endColorID="clear" angle="0" />
+	<color id="groupHeader" extendsColorID="foreground" />
+	<font id="groupHeader" name="Helvetica Neue Light" size="28" />
+	<characterStyle id="groupHeader" fontID="groupHeader" foregroundColorID="groupHeader" />
+	<paragraphStyle id="groupHeader" extendsParagraphStyleID="base" paragraphSpacingBefore="20" paragraphSpacing="10" />
+	<backgroundStyle
+		id="groupHeader"
+		maxWidth="0"
+		xWeight="0"
+		maxHeight="1"
+		yWeight="-0.5"
+		cornerRadiusX="0"
+		cornerRadiusY="0"
+		fillGradientID="groupHeader"
+	/>
+	<entryRule 
+		matchesQuery="isgroupheader"
+		paragraphStyleID="groupHeader"
+		lineCharacterStyleID="groupHeader"
+		frontParagraphBackgroundStyleID="groupHeader"
+	/>
+
+	<!-- @later -->
+	<color id="later" red=".25" green="0.35" blue="0.25" alpha="1.0" />
+	<characterStyle id="later" foregroundColorID="later" />
+	<entryRule matchesQuery="@later" contentCharacterStyleID="later" />
+	
+	<!-- @week -->
+	<color id="week" red=".9" green="0.9" blue="0.97" alpha="1.0" />
+	<characterStyle id="week" foregroundColorID="week" />
+	<entryRule matchesQuery="@week" contentCharacterStyleID="week" />
+
+	<!-- @today -->
+	<color id="today" red=".9" green="0.9" blue="0.97" alpha="1.0" />
+	<characterStyle id="today" foregroundColorID="today" />
+	<entryRule matchesQuery="@today" contentCharacterStyleID="today" />
+
+	<!-- @pending -->
+	<color id="pending" red="0.4" green="0.75" blue="1.0" alpha="0.8" />
+	<characterStyle id="pending" foregroundColorID="pending" />
+	<entryRule matchesQuery="@pending" contentCharacterStyleID="pending" />
+
+	<!-- @review -->
+	<color id="review" red="0.89" green="0.75" blue="0.4" alpha="1.0" />
+	<characterStyle id="review" foregroundColorID="review" />
+	<entryRule matchesQuery="@review" contentCharacterStyleID="review" />
+
+	<!-- @now -->
+	<color id="now" red=".95" green="0.25" blue="0.4" alpha="1.0" />
+	<characterStyle id="now" foregroundColorID="now" />
+	<entryRule matchesQuery="@now" contentCharacterStyleID="now" />
+
+	<!-- @flag -->
+	<color id="flagstart" red="0.8" green="0.2" blue="0.2" alpha=".75" />
+	<color id="flagend" red=".6" green=".2" blue=".2" alpha="0.55" />
+    <gradient id="flag" startColorID="flagstart" endColorID="flagend" angle="90" />
+    <backgroundStyle id="flag" extendsBackgroundStyleID="base" fillGradientID="flag" shadowID="NULL" />
+    <entryRule matchesQuery="@flag" contentCharacterStyleID="flag" backParagraphBackgroundStyleID="flag" />	
+	
+	<!-- @done -->
+	<color id="done" red="0.3" green="0.3" blue="0.3" alpha=".5" />
+	<characterStyle id="done" strikethroughStyle="NSUnderlineStyleSingle" foregroundColorID="done" />
+	<entryRule matchesQuery="@done" contentCharacterStyleID="done" />
+</theme>
