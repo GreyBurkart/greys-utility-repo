@@ -1,10 +1,17 @@
 # Grey's Utilities Repo
 
+## Alfred Extensions
+* **Backup Dropbox > USB.alfredextension** -- Make sure to edit the path for your own setup. This backs up the ~/Dropbox folder to a USB key using rsync; I found this easier than running the shell script from another location
+* **Git Pull.alfredextension** -- Folder action, does what it says and outputs into _growlnotify_
+* **Git Status.alfredextension** -- Another folder action that just does what it says, also requires _growlnotify_
+* **newtxt.alfredextension** -- A quick way to create a new text file on the desktop
+
 ## AppleScripts
 
 * **CurrentDate.scpt** -- Inserts current date into text; created for someone with WriteRoom and without TextExpander
 * **RemoveAllTags.scpt** -- Removes any and all @tags from the active TaskPaper document. _Note: This is destructive, and each tag counts as 1 step in the undo stack!_
 * **Sync iDevices.scpt** -- Simply tells iTunes to sync a connected iOS device; handy for launch services like AlfredApp
+* **DoneDateStamp.scpt -- alternative date-stamp for @done tags in TaskPaper
 
 ## Automator Workflows
 
