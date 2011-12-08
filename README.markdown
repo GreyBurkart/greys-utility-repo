@@ -6,6 +6,7 @@
 * **Git Status.alfredextension** -- Another folder action that just does what it says, also requires _growlnotify_
 * **newtxt.alfredextension** -- A quick way to create a new text file on the desktop
 * **Screenshadow Toggle.alfredextension** -- Toggles the absolutely _massive_ window shadow in Lion screen shots (cmd+shift+4, space, click). Based on "Desktop Toggle" by David Ferguson
+* **Desktop Declutter** -- Moves all Desktop contents into a 'dClutter' folder (AppleScript)
 
 ## AppleScripts
 
