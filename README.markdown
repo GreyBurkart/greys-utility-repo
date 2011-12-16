@@ -13,7 +13,9 @@
 * **CurrentDate.scpt** -- Inserts current date into text; created for someone with WriteRoom and without TextExpander
 * **RemoveAllTags.scpt** -- Removes any and all @tags from the active TaskPaper document. _Note: This is destructive, and each tag counts as 1 step in the undo stack!_
 * **Sync iDevices.scpt** -- Simply tells iTunes to sync a connected iOS device; handy for launch services like AlfredApp
-* **DoneDateStamp.scpt -- alternative date-stamp for @done tags in TaskPaper
+* **DoneDateStamp.scpt** -- Alternative date-stamp for @done tags in TaskPaper
+* **RemoveWeekTagFromDone.scpt** -- Does exactly what it says to the TaskPaper archive for cleaner and faster search views
+* **NextWeekSwap** -- Replaces all @next tags with @week in TaskPaper. _Note: Same undo stack caveat as RemoveAllTags.scpt!_ 
 
 ## Automator Workflows
 
