@@ -67,7 +67,7 @@
 	/>
 
 	<!-- @later -->
-	<color id="later" red=".25" green="0.35" blue="0.25" alpha="1.0" />
+	<color id="later" red="0.35" green="0.35" blue="0.35" alpha="0.7" />
 	<characterStyle id="later" foregroundColorID="later" />
 	<entryRule matchesQuery="@later" contentCharacterStyleID="later" />
 	
@@ -76,10 +76,10 @@
 	<characterStyle id="week" foregroundColorID="week" />
 	<entryRule matchesQuery="@week" contentCharacterStyleID="week" />
 
-	<!-- @today -->
-	<color id="today" red=".9" green="0.9" blue="0.97" alpha="1.0" />
-	<characterStyle id="today" foregroundColorID="today" />
-	<entryRule matchesQuery="@today" contentCharacterStyleID="today" />
+	<!-- @next -->
+	<color id="next" red=".9" green="0.9" blue=".97" alpha="0.5" />
+	<characterStyle id="next" foregroundColorID="next" />
+	<entryRule matchesQuery="@next" contentCharacterStyleID="next" />
 
 	<!-- @pending -->
 	<color id="pending" red="0.4" green="0.75" blue="1.0" alpha="0.8" />
