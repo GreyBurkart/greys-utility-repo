@@ -7,6 +7,7 @@
 * **newtxt.alfredextension** -- A quick way to create a new text file on the desktop
 * **Screenshadow Toggle.alfredextension** -- Toggles the absolutely _massive_ window shadow in Lion screen shots (cmd+shift+4, space, click). Based on "Desktop Toggle" by David Ferguson
 * **Desktop Declutter** -- Moves all Desktop contents into a 'dClutter' folder (AppleScript)
+* **Clean up broken text** -- Strips newlines from pasteboard text, good for copy-pasting from emails with hard line-breaks (not really my AppleScript code)
 
 ## AppleScripts
 
@@ -21,7 +22,8 @@
 
 * **Convert-folder-to-UTF8.workflow** -- Drop a folder of text files on this to re-encode them all to UTF-8
 * **TaskPaperMerge.workflow** -- Drop a folder of *.taskpaper files on this to combine them into a single document
-* **Drag Folder Here to Remove Conflicted Copies** -- Drop a Dropbox sync folder on this to move all conflicted copies to a folder "Conflicted Cleanup" on the desktop.
+* **Drag Folder Here to Remove Conflicted Copies** -- Drop a Dropbox sync folder on this to move all conflicted copies to a folder "Conflicted Cleanup" on the desktop
+* **TaskPaper-EnableResume** -- User utility to selectively enable Lion Resume for TaskPaper only
 
 ## Shell Scripts
 
