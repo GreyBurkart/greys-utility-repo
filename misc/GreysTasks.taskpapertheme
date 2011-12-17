@@ -97,9 +97,9 @@
 	<entryRule matchesQuery="@now" contentCharacterStyleID="now" />
 
 	<!-- @flag -->
-	<color id="flagstart" red="0.8" green="0.2" blue="0.2" alpha=".75" />
-	<color id="flagend" red=".6" green=".2" blue=".2" alpha="0.55" />
-    <gradient id="flag" startColorID="flagstart" endColorID="flagend" angle="90" />
+	<color id="flagstart" red="1" green="0" blue="0" alpha=".40" />
+	<color id="flagend" red="0" green="0" blue="0" alpha="0" />
+    <gradient id="flag" startColorID="flagstart" endColorID="flagend" angle="0" />
     <backgroundStyle id="flag" extendsBackgroundStyleID="base" fillGradientID="flag" shadowID="NULL" />
     <entryRule matchesQuery="@flag" contentCharacterStyleID="flag" backParagraphBackgroundStyleID="flag" />	
 	
