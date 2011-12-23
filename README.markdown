@@ -17,6 +17,7 @@
 * **DoneDateStamp.scpt** -- Alternative date-stamp for @done tags in TaskPaper
 * **RemoveWeekTagFromDone.scpt** -- Does exactly what it says to the TaskPaper archive for cleaner and faster search views
 * **NextWeekSwap** -- Replaces all @next tags with @week in TaskPaper. _Note: Same undo stack caveat as RemoveAllTags.scpt!_ 
+* **WeeklyReviewTagSwap.scpt** -- Combines _ReviewWeekTagFromDone_ and _NextWeekSwap_ into a single process in that order.
 
 ## Automator Workflows
 
