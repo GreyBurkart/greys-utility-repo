@@ -18,6 +18,8 @@
 * **RemoveWeekTagFromDone.scpt** -- Does exactly what it says to the TaskPaper archive for cleaner and faster search views
 * **NextWeekSwap** -- Replaces all @next tags with @week in TaskPaper. _Note: Same undo stack caveat as RemoveAllTags.scpt!_ 
 * **WeeklyReviewSwap.scpt** -- Combines _ReviewWeekTagFromDone_ and _NextWeekSwap_ into a single process in that order, and also removed @flag from @done (in Archive).
+* **Move@LaterTagsToEndOfProject.scpt** -- What it says there.
+* **Fix iTunes -54.scpt** -- Quick and painless fix for the iTunes Error -54 library bug
 
 ## Automator Workflows
 
@@ -36,3 +38,4 @@
 ## Misc
 
 * **GreysTasks.taskpapertheme** -- What I've been using for a TaskPaper theme recently; pay attention to the special tags
+* **GaragebandTransportCC** -- [MidiPipe](http://subtlesoft.square7.net/SubtleSoft/MidiPipe.html) setup to trigger basic transport controls via MIDI CC messages using Garageband's pathetic Applescript library
